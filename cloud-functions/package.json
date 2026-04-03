@@ -1,0 +1,16 @@
+{
+  "name": "graminsync-cloud-functions",
+  "version": "1.0.0",
+  "description": "Firebase Cloud Functions for GraminSync AI Digitization Pipeline",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "lint": "eslint --ext .ts functions/src"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "functions/lib/index.js",
+  "private": true
+}
